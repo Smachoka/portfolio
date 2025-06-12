@@ -1,9 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import path from "path";
+import * as path from "path";
 
 export default defineConfig({
-  base: "/portfolio/", // 👈 required for GitHub Pages
+  base: "/portfolio/", // 👈 this is required!
   plugins: [react()],
   resolve: {
     alias: {
